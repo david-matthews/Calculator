@@ -9,12 +9,17 @@ public class DivideTest {
 	private Divider divider;
 
 	
+	@SuppressWarnings("deprecation")
 	@Test
-	public void test() {
+	public void WholeNumberTest() {
 		divider = new Divider ();
-		double expectedValue= 2.0;
-		double actualValue = divider.divide(4,2);
+		int expectedValue= 2;
+		int actualValue = (int) divider.divide(4,2);
 		Assert.assertEquals(expectedValue, actualValue);
 	}
+
+	
+	
+
 
 }
